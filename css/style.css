@@ -1,0 +1,198 @@
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ms+Madi&display=swap');
+h1 {font-family: 'Cedarville Cursive', cursive;
+font-family: 'Ms Madi', cursive;
+    }
+/*Reseteo CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*Diseño HEADER*/
+header{
+    display: flex;
+    background-color: #f7d610;
+    justify-content: center;
+    height: 200px; 
+    width: 100%;
+    position: sticky;
+}
+/*Diseño MENU DE NAVEGACION/
+/*Para que el Content no pise el Menu*/
+nav .clearfix{
+    clear: both;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+}
+nav ul li{
+    display: flex;
+    list-style-type: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+/*Para que se vea que se puede hacer click - Pointer*/
+    cursor: pointer;
+    box-shadow: 0.5rem 0.25rem 0.25rem lightgray;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/*Colores Botones Nav*/
+/*Nota: la unica manera que encontre de que no se vea el subrayado y cambiar el color del texto fue aplicandolo directamente a la id, por eso esta repetido el estilo*/
+#purple{
+    background-color: blueviolet;
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+    }
+#blue{
+    background-color: aqua;
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+    }
+#yellow{
+    background-color: yellow;
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+}
+#orange{
+    background-color: orange;
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+}
+#red{
+    background-color: red;
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+}
+/*Para que se muevan los botones cuando hago click - MENU NAVEGACION*/
+nav ul li:active {
+    transform: translate(5px, 5px);
+}
+/*Para que cambie el texto cuando pasa el mouse*/
+nav ul li:hover {
+    font-weight: lighter;
+}
+/*Diseño CONTENIDOS de cada pagina*/
+/*Contenido HOME*/
+main{
+    height: 400px;
+    width:100%;
+    text-align: center;
+    overflow: auto;
+}
+.Foto{
+    height: 400px;
+    width: auto;
+} 
+/*Contenido MENU*/
+.nuestroMenu{
+    display: block;
+    align-items: center;
+    text-align: center;
+    overflow: auto;
+}
+/*Contenido CONTACTO*/
+.Formulario{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 400px;
+    overflow: auto;
+}
+/*Transition Botones Enviar y Borrar*/
+.clickableButton:hover {
+    font-weight: bolder;
+}
+/*Contenido DONDE ESTAMOS*/
+.DondeEstamos {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    height: 400px;
+    width: 100%; 
+    text-align: center; 
+    align-items: center; 
+    overflow: auto;
+}    
+/*Contenido MENU*/
+.nuestromenu{
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+    height: 400px;
+    width: 100%; 
+    text-align: center;  
+    overflow: auto;
+}
+/*Contenido SOBRE NOSOTROS*/
+.SobreNosotros{
+    margin-left: 20px;
+    height: 400px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fotoRosie{
+    border-radius: 50%;
+    }
+/*Orden Iconos Font Awesome*/
+.pieDePagina{
+    float: center;
+    width: 100%;
+    list-style-type: none;
+}
+/*GRIDS*/ 
+header{
+    grid-area: cabecera;
+}
+nav{
+    grid-area: menuNavegacion;
+}
+main{
+    grid-area: contenido;
+}
+footer{
+    grid-area: pieDePagina;
+}
+body{
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(2 ,200px) 400px 50px;
+    grid-template-areas: 
+    "cabecera"
+    "menuNavegacion"
+    "contenido"
+    "pieDePagina";
+}
+/*RESPONSIVE*/
+/*Media Queries*/
+/*Mobile*/
+/*Mobile First- Seteado en el Codigo CCS*/
+/*Desktop*/
+@media screen and (min-width: 768px){
+    nav ul li{
+        list-style-type: none;
+        margin: 0.5rem;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        box-shadow: 0.5rem 0.25rem 0.25rem lightgray;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    body{
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 200px 100px 450px 50px;
+        grid-template-areas: 
+        "cabecera"
+        "menuNavegacion"
+        "contenido"
+        "pieDePagina";
+    }
+}   
