@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*Colores Botones Nav - Nota: No pude anidar las IDs dentro de nav ul li, asi que las anide por separado*/
+nav .navButtons ul li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none; }
+
+#red {
+  background: red; }
+
+#orange {
+  background: orange; }
+
+#yellow {
+  background: yellow; }
+
+#blue {
+  background: aqua; }
+
+#purple {
+  background-color: blueviolet; }
+
+h1 {
+  font-family: 'Cedarville Cursive', cursive;
+  font-family: 'Ms Madi', cursive; }
+
+/*Diseño HEADER*/
+header {
+  display: flex;
+  background-color: #f7d610;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  position: sticky; }

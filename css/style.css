@@ -1,34 +1,34 @@
 /*Fuentes*/
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Ms+Madi&display=swap');
-h1 {font-family: 'Cedarville Cursive', cursive;
-font-family: 'Ms Madi', cursive;
-    }
+/*Ver Diseño Titulos h1 en SASS*/
 /*Reseteo CSS*/
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-/*Diseño HEADER*/
-header{
-    display: flex;
-    background-color: #f7d610;
-    justify-content: center;
-    height: 200px; 
-    width: 100%;
-    position: sticky;
-}
-/*Diseño MENU DE NAVEGACION/
+/*Ver Diseño HEADER en SASS*/
+/*Diseño MENU DE NAVEGACION*/
+/*Ver colores botones en SASS*/
 /*Para que el Content no pise el Menu*/
 nav .clearfix{
     clear: both;
+}
+/*Para quitar decoracion links - Nota: No logrev anidarlo correctamente en Sass, asi que lo agregue en el CSS*/
+a{
+    color: rgb(57, 53, 53);
+    text-decoration:none;
+}
+a:hover{
+    color: rgb(57, 53, 53);
+    text-decoration:none;
 }
 nav ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: white;
-}
+}   
 nav ul li{
     display: flex;
     list-style-type: none;
@@ -42,40 +42,9 @@ nav ul li{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
-/*Colores Botones Nav*/
-/*Nota: la unica manera que encontre de que no se vea el subrayado y cambiar el color del texto fue aplicandolo directamente a la id, por eso esta repetido el estilo*/
-#purple{
-    background-color: blueviolet;
-    text-decoration: none;
-    color: rgb(45, 44, 44);
-    }
-#blue{
-    background-color: aqua;
-    text-decoration: none;
-    color: rgb(45, 44, 44);
-    }
-#yellow{
-    background-color: yellow;
-    text-decoration: none;
-    color: rgb(45, 44, 44);
-}
-#orange{
-    background-color: orange;
-    text-decoration: none;
-    color: rgb(45, 44, 44);
-}
-#red{
-    background-color: red;
-    text-decoration: none;
-    color: rgb(45, 44, 44);
-}
 /*Para que se muevan los botones cuando hago click - MENU NAVEGACION*/
 nav ul li:active {
     transform: translate(5px, 5px);
-}
-/*Para que cambie el texto cuando pasa el mouse*/
-nav ul li:hover {
-    font-weight: lighter;
 }
 /*Diseño CONTENIDOS de cada pagina*/
 /*Contenido HOME*/

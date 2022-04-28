@@ -1,0 +1,22 @@
+/*Colores Botones Nav - Nota: No pude anidar las IDs dentro de nav ul li, asi que las anide por separado*/
+nav .navButtons ul li{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+}
+#red{
+    background: $rainbowred;
+}
+#orange{
+    background: $rainboworange;
+}
+#yellow{
+    background: $rainbowyellow;
+}
+#blue{
+    background: $rainbowblue;
+}
+#purple{
+    background-color: $rainbowpurple;
+}
